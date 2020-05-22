@@ -3,7 +3,7 @@ const authConfig = require('../config/auth.json')
 
 export default{
     generateJwt(params = {}) {
-        return jwt.sign(params, process.env.secret || authConfig.secret, {
+        return jwt.sign(params, process.env.SECRET || authConfig.secret, {
             expiresIn: 86400
         })
     }

@@ -10,7 +10,7 @@ dotenv.config()
 const requireDir = require('require-dir')
 const app = express();
 
-mongoose.connect(`${process.env.MONGODB}`, {useNewUrlParser: true, useUnifiedTopology: true, dbName: 'parkapi'},
+mongoose.connect(`${process.env.MONGODB_URL}`, {useNewUrlParser: true, useUnifiedTopology: true, dbName: 'parkapi'},
 (err) => {
     if (err) {
         console.log(`ERROR connecting to: Local MongoDB. ${err}`);
