@@ -9,8 +9,8 @@ const routes = express.Router();
 routes.get("/all", UserController.getAll)
 
 //Post
-routes.post("/login", UserController.signin)
-routes.post("/create", UserController.signup)
+routes.post("/signin", UserController.signin)
+routes.post("/signup", UserController.signup)
 
 
 export {routes};
