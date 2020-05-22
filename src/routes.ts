@@ -6,7 +6,7 @@ const routes = express.Router();
 
 
 //Get
-
+routes.get("/all", UserController.getAll)
 
 //Post
 routes.post("/login", UserController.signin)
