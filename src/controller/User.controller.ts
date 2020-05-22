@@ -12,7 +12,7 @@ const User = mongoose.model("User")
 export default {
     async signin(req: Request, res: Response) {
         try {
-            const user: IUser = await User.findOne({
+            const user: any = await User.findOne({
                 login: req.body.login,
             });
 
@@ -30,7 +30,7 @@ export default {
 
     async signup(req: Request, res: Response) {
         try {
-            const user: IUser = new User({
+            const user = new User({
                 name: req.body.name,
                 login: req.body.login,
                 password: req.body.password,

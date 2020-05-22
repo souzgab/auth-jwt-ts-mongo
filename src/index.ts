@@ -24,5 +24,5 @@ app.use(bodyParser.json())
 app.use(cors());
 app.use(routes)
 
-const port = process.env.PORT || 3333;
-app.listen(port, () => console.log('Server on port: ' + port))
+const PORT: string|number = process.env.PORT || 3333;
+app.listen(PORT, () => console.log('Server on port: ' + PORT))

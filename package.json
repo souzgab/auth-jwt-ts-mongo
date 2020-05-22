@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node-dev src/index.ts"
+    "start": "ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -25,10 +25,10 @@
     "@types/express": "^4.17.6",
     "@types/mongoose": "^5.7.21",
     "@types/require-dir": "^1.0.1",
-    "@types/jsonwebtoken": "^8.5.0",
-    "nodemon": "^2.0.4"    
+    "@types/jsonwebtoken": "^8.5.0"
   },
   "dependencies": {
+    "nodemon": "^2.0.4" ,
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.9.3",
     "bcryptjs": "^2.4.3",
